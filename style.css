@@ -1,0 +1,100 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+.hero-section {
+  position: relative;
+  background-image: url("images/background.jpg"); /* Add your background image URL here */
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0); /* Adjust the opacity/color as needed */
+  z-index: -1;
+}
+
+.hero-section h1,
+.hero-section h4 {
+  margin: 0;
+  color: black;
+}
+
+.hero-section h1 span {
+  background-image: linear-gradient(to right, #405dc1, #ff1183); /* Adjust gradient colors as needed */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-section h1 {
+  line-height: 1.2; /* Adjust line height as needed */
+}
+
+.hero-section h4 {
+  margin-bottom: 20px; /* Adjust margin as needed */
+}/*# sourceMappingURL=style.css.map */
